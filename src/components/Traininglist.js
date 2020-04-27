@@ -22,9 +22,9 @@ export default function Traininglist() {
     const columns = [
         {
             Header: 'Date',
-            id: 'date',
-            accessor: d => {
-            return moment(d.date).locale('fi').format('L LT')}
+            id: 'date', //A unique ID is required if the accessor is not a string https://github.com/tannerlinsley/react-table/tree/v6#columns
+            accessor: date => {
+            return moment(date.date).format('L LT')} // L on päiväys (paikallisessa formaatissa ja LT on aika ilman sekunteja) https://momentjscom.readthedocs.io/en/latest/moment/01-parsing/03-string-format/
         },
         {
             Header: 'Duration',
