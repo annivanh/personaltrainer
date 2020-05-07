@@ -12,7 +12,7 @@ export default function Navigate() {
                     <div class="navbar-header">
                         <p>Personal Trainer Site</p>
                     </div>
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" align="right">
                     <li className="nav-item"><Link className="nav-link" to="/customers">Customers</Link></li>
                     <li className="nav-item"><Link className="nav-link"to="/training">Training</Link></li>
                     </ul>
